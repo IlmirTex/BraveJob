@@ -1,0 +1,35 @@
+.item {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    background-color: rgba(255, 251, 5, 0.116);
+    border-radius: 3px;
+    
+}
+.item__input {
+    width: 50px;
+}
+
+.payment p {
+    margin: auto;
+}
+
+.item__button {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(133, 7, 7);
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-radius: 5px;
+}
+.item__button:hover {
+    background-color: rgb(179, 6, 6);
+    transition: .5s;
+
+}
+.payment__input {
+    border: none;
+    outline: none;
+}
