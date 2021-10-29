@@ -3,8 +3,21 @@
     width: 90%;
     text-align: center;
     background-color: rgba(189, 1, 1, 0.116);
-    border-radius: 3px;
-    
+    border-radius: 5px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;  
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .payment {
@@ -13,24 +26,31 @@
     justify-content: center;
     align-items: center;
 }
+.payment i {
+    font-size: 12px;
+    color: grey;
+}
 
-.payment p {
-    margin: auto;
+.item span {  
+    font-weight: 500;
+}
+.item p {
+    margin: 20px 0px 10px 0px;
 }
 
 .item__button {
     margin-top: 30px;
     padding: 10px;
-    background-color: rgb(133, 7, 7);
+    background-color: rgba(5, 139, 16, 0.788);
     text-decoration: none;
     color: rgb(255, 255, 255);
     display: block;
     border-radius: 5px;
-    width: 100px;
+    width: 98%;
     border: none;
 }
 .item__button:hover {
-    background-color: rgb(179, 6, 6);
+    background-color: rgba(16, 182, 29, 0.788);
     transition: .5s;
 
 }
@@ -38,4 +58,6 @@
 .payment__input {
     border: none;
     outline: none;
+    border-radius: 2px;
+    width: 150px;
 }

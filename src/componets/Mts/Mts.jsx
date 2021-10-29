@@ -5,24 +5,16 @@ import { NavLink, useHistory } from 'react-router-dom';
 
 const Mts = () => {
 
-    const history = useHistory();
-
-    const routeChange = () =>{ 
-        let path = `/`; 
-        history.push(path);
-      }
-
     return (
         <div className={s.item}>
             <form action="#">
                 <h4>Детали платежа</h4>
-                <p>«МТС. На шаг впереди»</p>
+                <span>«МТС. На шаг впереди»</span>
                 <div className={s.payment}>
-                    <p>Номер телефона: </p>
-                    <input className={s.payment__input} type='tel' pattern='/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/' ></input>
-                    <p >Введите сумму:</p>
+                    <p>Номер телефона: <br/><i>8-919-234-12-54</i></p>
+                    <input className={s.payment__input} type='tel' pattern='^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$' ></input>
+                    <p >Введите сумму: <br/><i>(0 - 1000руб.)</i></p>
                     <input className={s.payment__input} type="number"  min="1" max="1000" />
-                    {/* <NavLink className={s.item__button} to="/Header">Оплатить</NavLink> */}
                     <input className={s.item__button} type='submit' value='Оплатить' ></input>
                 </div>
             </form>

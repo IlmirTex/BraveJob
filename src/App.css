@@ -10,12 +10,29 @@
 
   width: 700px;
   margin: 0 auto;
+
 }
 .main__content {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* padding: 10px; */
   
 }
+
+@media screen and (max-width:575px){
+  .main__grid {
+      width: auto;
+      display: inline;
+  }
+  
+}
+@media screen and (max-width:767px){
+  .main__grid {
+    width: auto;
+    display: inline;
+  }
+  
+}
+
+
 
